@@ -45,9 +45,9 @@
 
 #### 代码结构说明
 
-cn.gudqs7.plugins 下有 3 个主要的包，即 `docer / error / search`，作用如下：
-- docer：方法注释获取
-- error：接入 IDEA 异常处理组件
+cn.gudqs7.plugins 下有 3 个主要的包，即 `common / diagnostic / search`，作用如下：
+- common：一些公共类, 工具以及基类
+- diagnostic：接入 IDEA 异常处理组件
 - search：Search Everywhere 中 Api 这个 Tab 的接入及实现 (主要)
 
 > 更多代码上的疑问或是建议欢迎通过邮件或提 Issue 来咨询我！

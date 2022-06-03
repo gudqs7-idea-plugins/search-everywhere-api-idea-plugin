@@ -45,9 +45,9 @@ Also, feel free to post on the [Github Forum](https://github.com/docer-savior/se
 
 #### Code structure description
 
-There are 3 main packages under cn.gudqs7.plugins, namely `docer / error / search`, which function as follows:
-- doctor: method annotation acquisition
-- error: access IDEA exception handling component
+There are 3 main packages under cn.gudqs7.plugins, namely `common / diagnostic / search`, which function as follows:
+- common: some common classes, tools and base classes
+- diagnostic: access IDEA exception handling component
 - search: Access and implementation of the Api Tab in Search Everywhere (mainly)
 
 > For more code questions or suggestions, please contact me by email or issue!
