@@ -22,7 +22,7 @@
 
         <searchEverywhereContributor implementation="cn.gudqs7.plugins.search.ApiSearchContributorFactory"/>
 
-        <errorHandler implementation="cn.gudqs7.plugins.diagnostic.SaviorIssueSubmitter"/>
+        <errorHandler implementation="cn.gudqs7.plugins.diagnostic.SearchApiIssueSubmitter"/>
     </extensions>
 
     <actions>
