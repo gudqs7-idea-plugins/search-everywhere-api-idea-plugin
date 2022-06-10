@@ -16,6 +16,7 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'commons-codec:commons-codec:1.15'
     implementation 'org.freemarker:freemarker:2.3.31'
+    implementation 'com.youbenzi:MDTool:1.2.4'
     annotationProcessor 'org.projectlombok:lombok:1.18.2'
     compileOnly 'org.projectlombok:lombok:1.18.2'
 }
