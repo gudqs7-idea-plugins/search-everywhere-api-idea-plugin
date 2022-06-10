@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'cn.gudqs7.idea.plugins'
-version '1.1.1'
+version '1.1.2'
 
 repositories {
     mavenCentral()
@@ -35,6 +35,11 @@ patchPluginXml {
 }
 test {
     useJUnitPlatform()
+}
+
+// 禁用后, 自定义配置信息, 无法在首选项的搜索框被搜索
+buildSearchableOptions {
+    buildSearchableOptions.enabled = false
 }
 
 publishPlugin {
