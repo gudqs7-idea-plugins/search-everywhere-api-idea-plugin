@@ -1,6 +1,6 @@
 [release-img]: https://img.shields.io/github/release/docer-savior/search-everywhere-api-idea-plugin.svg
 [latest-release]: https://github.com/docer-savior/search-everywhere-api-idea-plugin/releases/latest
-[plugin-img]: https://img.shields.io/badge/plugin-19251-orange.svg
+[plugin-img]: https://img.shields.io/badge/Idea%20Plugin-Search%20Everywhere%20Api-orange.svg
 [plugin]: https://plugins.jetbrains.com/plugin/19251
 [jet-img]: https://img.shields.io/badge/plugin-Install%20Plugin-4597ff.svg
 [jet]: http://localhost:63342/api/installPlugin?action=install&pluginId=gudqs7.github.io.search.everywhere.api
