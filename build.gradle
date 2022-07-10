@@ -17,8 +17,8 @@ dependencies {
     implementation 'commons-codec:commons-codec:1.15'
     implementation 'org.freemarker:freemarker:2.3.31'
     implementation 'com.youbenzi:MDTool:1.2.4'
+    implementation 'org.projectlombok:lombok:1.18.2'
     annotationProcessor 'org.projectlombok:lombok:1.18.2'
-    compileOnly 'org.projectlombok:lombok:1.18.2'
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
