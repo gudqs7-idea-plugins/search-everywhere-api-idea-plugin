@@ -296,6 +296,39 @@ public class PsiTypeUtil {
         return null;
     }
 
+    /**
+     * 是否为相同的 psi类型
+     *
+     * @param from 从
+     * @param to   来
+     * @return boolean
+     */
+    public static boolean isSamePsiType(PsiType from, PsiType to) {
+        if (from == null && to == null) {
+            return true;
+        }
+        if (from == null || to == null) {
+            return false;
+        }
+        return from.getCanonicalText().equals(to.getCanonicalText());
+    }
+
+    public static PsiType getElementTypeFromList(PsiType psiType, Project project) {
+        if (psiType instanceof PsiClassReferenceType) {
+            PsiClassReferenceType psiClassReferenceType = (PsiClassReferenceType) psiType;
+            PsiClass resolveClass = psiClassReferenceType.resolve();
+            PsiType[] parameters = psiClassReferenceType.getParameters();
+            boolean hasGenericParameter = parameters.length > 0;
+            if (isPsiTypeFromList(psiType, project)) {
+                if (hasGenericParameter) {
+                    PsiType elementType = parameters[0];
+                    return getRealPsiType(elementType, project, elementType);
+                }
+            }
+        }
+        return psiType;
+    }
+
     private static PsiType getRealPsiType0(String ownerQname, int index, Project project, PsiType defaultVal) {
         PsiType[] psiTypes = GENERIC_MAP.get(ownerQname);
         if (psiTypes != null && psiTypes.length > 0) {
@@ -313,4 +346,5 @@ public class PsiTypeUtil {
             return PsiType.getTypeByName("java.lang.Object", project, GlobalSearchScope.allScope(project));
         }
     }
+
 }
